@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --darkCyan: hsl(179, 100%, 13%);
+  --white: rgba(255, 255, 255, 0.75);
+  --gray: hsl(0, 0%, 95%);
+  --bigShoulders: "Big Shoulders Display", cursive;
+  --lexend: "Lexend Deca";
+}
+
+body {
+  background-color: var(--gray);
+}
+section {
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex;
+}
+.article-sedan {
+  background-color: var(--orange);
+}
+.article-suv {
+  background-color: var(--cyan);
+}
+.article-luxury {
+  background-color: var(--darkCyan);
+}
+article {
+  padding: 48px;
+}
+img {
+  margin-bottom: 40px;
+}
+h2 {
+  color: var(--gray);
+  margin-bottom: 40px;
+  font-family: var(--bigShoulders);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+p {
+  font-size: 15px;
+  color: var(--white);
+  font-family: var(--lexend);
+}
+
+button {
+  background-color: var(--gray);
+  border-width: 2px;
+  border-color: var(--gray);
+  border-style: solid;
+  padding: 13px 27px;
+  border-radius: 50px;
+  margin-top: 90px;
+}
+section article button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: var(--gray);
+}
+.article-sedan button {
+  color: var(--orange);
+  font-size: 15px;
+  font-family: var(--lexend);
+}
+.article-suv button {
+  color: var(--cyan);
+  font-size: 15px;
+  font-family: var(--lexend);
+}
+.article-luxury button {
+  color: var(--darkCyan);
+  font-size: 15px;
+  font-family: var(--lexend);
+}
+@media (max-width: 930px) {
+  section {
+    margin: 88px 24px;
+    flex-direction: column;
+  }
+}
