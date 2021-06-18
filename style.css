@@ -19,16 +19,19 @@ body {
 section {
   max-width: 920px;
   margin: 0 auto;
+  margin-top: 150px;
   display: flex;
 }
 .article-sedan {
   background-color: var(--orange);
+  border-radius: 5px 0 0 5px;
 }
 .article-suv {
   background-color: var(--cyan);
 }
 .article-luxury {
   background-color: var(--darkCyan);
+  border-radius: 0 5px 5px 0;
 }
 article {
   padding: 48px;
@@ -82,5 +85,11 @@ section article button:hover {
   section {
     margin: 88px 24px;
     flex-direction: column;
+  }
+  .article-luxury {
+    border-radius: 0 0 5px 5px;
+  }
+  .article-sedan {
+    border-radius: 5px 5px 0 0;
   }
 }
